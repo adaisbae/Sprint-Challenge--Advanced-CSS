@@ -1,6 +1,6 @@
 // Navigation code here
 .top-nav {
-    width: 95%;
+    width: 98%;
     background-color: @nav-bg;
     .center-column();
     margin: @center-margin;
@@ -16,6 +16,10 @@
       width: 25%;
       display: flex;
       justify-content: space-between;
+
+      @media @phone {
+        width: 80%;
+      }
     }
   
     a {
