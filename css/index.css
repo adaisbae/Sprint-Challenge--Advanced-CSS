@@ -181,7 +181,7 @@ p {
 }
 @media (max-width: 500px) {
   .top-nav nav {
-    width: 80%;
+    width: 95%;
   }
 }
 .top-nav a {
@@ -203,6 +203,12 @@ footer {
 .home .intro img {
   margin: 0 auto;
   border-radius: 0.5em;
+}
+@media (max-width: 500px) {
+  .home .intro img {
+    width: 95%;
+    margin: 0 1em;
+  }
 }
 .home .intro h2 {
   padding: 15px;
