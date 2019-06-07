@@ -108,7 +108,7 @@
         }
 
         @media @phone {
-          width: 95%;
+          width: 100%;
           padding: 1.3em 3em;
           margin-bottom: 1em;
           font-weight: 500;
@@ -119,7 +119,7 @@
 
     .walk-img {
       width: 46%;
-      margin-left: 4%;
+      margin-left: 2%;
 
       @media @phone {
         width: 100%;
@@ -131,8 +131,22 @@
         border-radius: 10px;
 
         @media @phone {
-          width: 92%;
-          order: -1;
+          width: 95%;
+          margin-right: .7em;
+        }
+      }
+    }
+
+    // Added this to manage ordering of space walk image
+
+    .mobile-walk{
+      @media @phone {
+        display: flex;
+      }
+
+      .walk-img {
+        @media @phone {
+          order: 1;
         }
       }
     }
