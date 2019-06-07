@@ -80,6 +80,7 @@
     @media @phone {
       flex-direction: column;
       padding: 20px 10px;
+      margin-top: 20px;
     }
 
     .walk-text {
@@ -142,11 +143,12 @@
     .mobile-walk{
       @media @phone {
         display: flex;
+        flex-direction: column-reverse;
       }
 
       .walk-img {
         @media @phone {
-          order: 1;
+          order: -1;
         }
       }
     }
