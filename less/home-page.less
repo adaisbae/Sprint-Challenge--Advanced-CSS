@@ -78,7 +78,7 @@
     justify-content: center;
 
     @media @phone {
-      flex-direction: column;
+      flex-direction: column-reverse;
       padding: 20px 10px;
       margin-top: 20px;
     }
@@ -139,18 +139,5 @@
     }
 
     // Added this to manage ordering of space walk image
-
-    .mobile-walk{
-      @media @phone {
-        display: flex;
-        flex-direction: column-reverse;
-      }
-
-      .walk-img {
-        @media @phone {
-          order: -1;
-        }
-      }
-    }
   }
 }// home

@@ -267,7 +267,7 @@ footer {
 }
 @media (max-width: 500px) {
   .home .walk {
-    flex-direction: column;
+    flex-direction: column-reverse;
     padding: 20px 10px;
     margin-top: 20px;
   }
@@ -326,16 +326,5 @@ footer {
   .home .walk .walk-img img {
     width: 95%;
     margin-right: 0.7em;
-  }
-}
-@media (max-width: 500px) {
-  .home .walk .mobile-walk {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-}
-@media (max-width: 500px) {
-  .home .walk .mobile-walk .walk-img {
-    order: -1;
   }
 }
