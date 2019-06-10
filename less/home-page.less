@@ -3,6 +3,15 @@
 .home {
 
   .intro {
+    img {
+      margin: @center-margin;
+      border-radius: .5em;
+
+      @media @phone {
+        width: 95%;
+        margin: 0 1em;
+      }
+    }
 
     h2 {
       padding: 15px;
@@ -18,14 +27,36 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-
+ 
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
     }
-  }
+
+    .blast {
+      @media @phone {
+        width: 90%;
+        margin: 1.5em auto;
+      }
+    }
+
+    .sky {
+      @media @phone {
+        display: none;
+      }
+    }
+
+    .launch {
+      @media @phone {
+        display: none;
+      }
+    }
+
+    }
+
+  
 
   .visit-planets {
     padding: 15px;
@@ -46,8 +77,18 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      flex-direction: column-reverse;
+      padding: 20px 10px;
+      margin-top: 20px;
+    }
+
     .walk-text {
       width: 50%;
+
+      @media @phone {
+        margin-top: 25px;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -57,19 +98,50 @@
         margin-bottom: 26px;
       }
 
-      .btn {
+      @media @phone {
+        width: 100%;
       }
+
+      .btn {
+        .button-style(@btn-bg-color, 30%, @sea-shell, 1.9rem, .3em, .3em);
+        text-align: center;
+        font-weight: 500;
+
+        &:hover{
+          background-color: @sea-shell;
+          color: @btn-bg-color;
+        }
+
+        @media @phone {
+          width: 100%;
+          padding: 1.3em 3em;
+          margin-bottom: 1em;
+          font-weight: 500;
+        }
+      }
+
     }
 
     .walk-img {
       width: 46%;
-      margin-left: 4%;
+      margin-left: 2%;
+
+      @media @phone {
+        width: 100%;
+      }
       
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+
+        @media @phone {
+          width: 95%;
+          margin-right: .7em;
+        }
       }
     }
+
+    // Added this to manage ordering of space walk image
   }
 }// home
