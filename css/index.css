@@ -241,6 +241,10 @@ p {
   font-size: 1.8rem;
   border-radius: 6px;
 }
+.home .walk .walk-text .btn:hover {
+  color: #22283A;
+  background-color: #F6F7F8;
+}
 .home .walk .walk-img {
   width: 50%;
   padding: 15px;
