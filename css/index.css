@@ -170,6 +170,11 @@ p {
   padding: 20px;
   background-color: #F6F6F6;
 }
+@media (max-width: 500px) {
+  .top-nav {
+    width: 100%;
+  }
+}
 .top-nav h1 {
   font-size: 4rem;
   margin-bottom: 15px;
@@ -179,6 +184,11 @@ p {
   justify-content: space-around;
   width: 25%;
 }
+@media (max-width: 500px) {
+  .top-nav nav {
+    width: 100%;
+  }
+}
 .top-nav nav a {
   text-decoration: none;
   font-size: 1.5rem;
@@ -186,6 +196,11 @@ p {
 }
 .home .intro {
   margin-bottom: 20px;
+}
+@media (max-width: 500px) {
+  .home .intro {
+    width: 100%;
+  }
 }
 .home .intro img {
   width: 100%;
@@ -208,6 +223,15 @@ p {
 .home .space-images .launch {
   border-radius: 25px;
 }
+@media (max-width: 500px) {
+  .home .space-images .sky,
+  .home .space-images .launch {
+    display: none;
+  }
+  .home .space-images .blast {
+    width: 90%;
+  }
+}
 .home .visit-planets {
   padding: 15px;
   border-bottom: 2px solid #dee2e6;
@@ -223,9 +247,19 @@ p {
   margin: 50px 0;
   display: flex;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    flex-direction: column-reverse;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
   padding: 15px;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 15px;
@@ -241,6 +275,12 @@ p {
   font-size: 1.8rem;
   border-radius: 6px;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 95%;
+    text-align: center;
+  }
+}
 .home .walk .walk-text .btn:hover {
   color: #22283A;
   background-color: #F6F7F8;
@@ -249,10 +289,21 @@ p {
   width: 50%;
   padding: 15px;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    padding: 0;
+  }
+}
 .home .walk .walk-img img {
   border-radius: 10px;
   width: 75%;
   padding-left: 25px;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img img {
+    width: 95%;
+  }
 }
 .home footer {
   text-align: center;
@@ -262,4 +313,9 @@ p {
   color: #22283A;
   background-color: #F6F6F6;
   border-radius: 6px;
+}
+@media (max-width: 500px) {
+  .home footer {
+    width: 95%;
+  }
 }
