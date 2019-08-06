@@ -1,17 +1,27 @@
 // Mixins Here
 
-.center-column() {
+.even-items(){
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
 }
 
-.button-style(@bgc, @wide, @col, @fs, @pad, @rad) {
-    background-color: @bgc;
-    width: @wide;
-    color: @col;
-    font-size: @fs;
-    padding: @pad;
-    border-radius: @rad;
+.column-display(){
+    display: flex;
+    flex-direction: column;
 }
+
+
+//Parametric Mixin
+
+.btn(@width, @fcolor, @bkgd, @pad, @fontsize, @radius){
+    width: @width;
+    color: @fcolor;
+    background-color: @bkgd;
+    padding: @pad;
+    font-size: @fontsize;
+    border-radius: @radius;
+}
+
+
+
+
