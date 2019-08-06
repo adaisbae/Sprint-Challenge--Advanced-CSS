@@ -195,6 +195,16 @@ p {
 .home .intro h2 {
   margin-bottom: 10px;
 }
-.home :nth-child(n+2) {
+.home .intro :nth-child(n+2) {
   padding: 15px;
+}
+.home .space-images {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 40px;
+}
+.home .space-images .blast,
+.home .space-images .sky,
+.home .space-images .launch {
+  border-radius: 25px;
 }
