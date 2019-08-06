@@ -18,8 +18,7 @@
     }
 
     .space-images{
-        display: flex;
-        justify-content: space-evenly;
+       .even-items();
         margin-bottom: 40px;
     
         .blast, .sky, .launch{
@@ -57,12 +56,7 @@
             }
     
             .btn{
-                width: 20%;
-                color: @porcelain;
-                background-color: @btn-bg-color;
-                padding: 10px 15px;
-                font-size: 1.8rem;
-                border-radius: 6px;
+                .btn(20%, @porcelain, @btn-bg-color, 10px 15px, 1.8rem, 6px);
             }
         }
     

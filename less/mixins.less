@@ -1,2 +1,27 @@
 // Mixins Here
 
+.even-items(){
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.column-display(){
+    display: flex;
+    flex-direction: column;
+}
+
+
+//Parametric Mixin
+
+.btn(@width, @fcolor, @bkgd, @pad, @fontsize, @radius){
+    width: @width;
+    color: @fcolor;
+    background-color: @bkgd;
+    padding: @pad;
+    font-size: @fontsize;
+    border-radius: @radius;
+}
+
+
+
+
