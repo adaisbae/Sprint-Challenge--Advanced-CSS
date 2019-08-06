@@ -208,3 +208,14 @@ p {
 .home .space-images .launch {
   border-radius: 25px;
 }
+.visit-planets {
+  padding: 15px;
+  border-bottom: 2px solid #dee2e6;
+}
+.visit-planets h3,
+.visit-planets p {
+  margin-bottom: 10px;
+}
+.visit-planets :last-child {
+  margin-bottom: 60px;
+}
