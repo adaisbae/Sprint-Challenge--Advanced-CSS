@@ -250,3 +250,12 @@ p {
   width: 75%;
   padding-left: 25px;
 }
+.home footer {
+  text-align: center;
+  padding: 20px;
+  width: 98%;
+  font-size: 2rem;
+  color: #22283A;
+  background-color: #F6F6F6;
+  border-radius: 6px;
+}
